@@ -52,15 +52,16 @@ This code creates folders and files for [cookiecutter](https://pypi.python.org/p
 * The inputs then replace any values surrounded with `{{}}` inside the folder [{{cookiecutter.template_name}}](https://github.com/rrwen/cookiecutter-template/tree/master/%7B%7Bcookiecutter.template_name%7D%7D)
 
 ```
-        cookiecutter             <-- template tool
+        cookiecutter                            <-- template tool
              |
-      cookiecutter.json          <-- template inputs
+      cookiecutter.json                      <-- template inputs
              |
 {{cookiecutter.template_name}}    <-- generated template
 ```
 
 The following files will be created inside a folder with the same name as the `template_name` input:
 
+* **{{cookiecutter.template_name}}**: templating folder with README.md and MIT LICENSE files
 * **.gitignore**: a Python [.gitignore](https://git-scm.com/docs/gitignore) automatically generated from github
 * **.travis.yml**: a [.travis.yml](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) file for automatic builds and tests
 * **LICENSE**: MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github

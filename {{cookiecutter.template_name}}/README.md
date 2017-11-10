@@ -51,16 +51,14 @@ This code creates folders and files for [cookiecutter](https://pypi.python.org/p
 * The inputs then replace any values surrounded with `{% raw %}{{}}{% endraw %}` inside the folder [{% raw %}{{cookiecutter.template_name}}{% endraw %}]({{cookiecutter.github_url}}/tree/master/%7B%7B{% raw %}{{cookiecutter.template_name}}{% endraw %}%7D%7D)
 
 ```
-        cookiecutter             <-- template tool
+        cookiecutter              <-- template tool
              |
-      cookiecutter.json          <-- template inputs
+      cookiecutter.json           <-- template inputs
              |
 {% raw %}{{cookiecutter.template_name}}{% endraw %}    <-- generated template
 ```
 
 The following files will be created inside a folder with the same name as the `template_name` input:
 
-* **.gitignore**: a Python [.gitignore](https://git-scm.com/docs/gitignore) automatically generated from github
-* **.travis.yml**: a [.travis.yml](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) file for automatic builds and tests
 * **LICENSE**: MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
-* **README.md**: a readme [Markdown](https://daringfireball.net/projects/markdown/) file with header, install, usage, and developer notes sections
+* **README.md**: a readme [Markdown](https://daringfireball.net/projects/markdown/) file with header section
