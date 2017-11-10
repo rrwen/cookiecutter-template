@@ -3,7 +3,7 @@
 Richard Wen  
 rrwen.dev@gmail.com  
 
-Personal Python cookiecutter template.
+Personal Python cookiecutter base template.
 
 [![Build Status](https://travis-ci.org/rrwen/cookiecutter-template.svg?branch=master)](https://travis-ci.org/rrwen/cookiecutter-template)
 [![GitHub license](https://img.shields.io/github/license/rrwen/cookiecutter-template.svg)](https://github.com/rrwen/cookiecutter-template/blob/master/LICENSE)
@@ -46,7 +46,7 @@ git push -u origin master
 
 ### Implementation
 
-This template to create folders and files for [cookiecutter](https://pypi.python.org/pypi/cookiecutter) templates.
+This code creates folders and files for [cookiecutter](https://pypi.python.org/pypi/cookiecutter) templates.
 
 * The main file is [cookiecutter.json](https://github.com/rrwen/cookiecutter-template/blob/master/cookiecutter.json) which defines the inputs for the command line interface
 * The inputs then replace any values surrounded with `{{}}` inside the folder [{{cookiecutter.template_name}}](https://github.com/rrwen/cookiecutter-template/tree/master/%7B%7Bcookiecutter.template_name%7D%7D)
