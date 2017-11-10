@@ -5,8 +5,5 @@
   "template_description": "template_description",
    "github_user": "rrwen",
    "github_url": "{{'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.template_name}}",
-   "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}",
-   "_copy_without_render": [
-    "*{{cookiecutter.template_name}}/{% raw %}{{cookiecutter.template_name}}{% endraw %}"
-   ]
+   "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}"
 }
