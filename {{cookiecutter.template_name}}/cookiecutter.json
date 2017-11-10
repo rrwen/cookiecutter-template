@@ -1,8 +1,8 @@
 {
   "author": "{{cookiecutter.author}}",
   "email": "{{cookiecutter.email}}",
-  "template_name": "{{cookiecutter.template_name}}",
-  "template_description": "{{cookiecutter.template_description}}",
+  "template_name": "template_name",
+  "template_description": "template_description",
    "github_user": "{{cookiecutter.github_user}}",
    "github_url": "{% raw %}{{'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.template_name}}{% endraw %}",
    "github_short": "{% raw %}{{cookiecutter.github_user + '/' + cookiecutter.template_name}}{% endraw %}"
