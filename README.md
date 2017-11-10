@@ -52,9 +52,9 @@ This code creates folders and files for [cookiecutter](https://pypi.python.org/p
 * The inputs then replace any values surrounded with `{{}}` inside the folder [{{cookiecutter.template_name}}](https://github.com/rrwen/cookiecutter-template/tree/master/%7B%7Bcookiecutter.template_name%7D%7D)
 
 ```
-        cookiecutter                            <-- template tool
+        cookiecutter              <-- template tool
              |
-      cookiecutter.json                      <-- template inputs
+      cookiecutter.json           <-- template inputs
              |
 {{cookiecutter.template_name}}    <-- generated template
 ```
