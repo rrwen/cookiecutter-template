@@ -1,18 +1,17 @@
-# cookiecutter-template
+# {% raw %}{{cookiecutter.template_name}}{% endraw %}
 
-Richard Wen  
-rrwen.dev@gmail.com  
+{% raw %}{{cookiecutter.author}}{% endraw %}  
+{% raw %}{{cookiecutter.email}}{% endraw %}  
 
-Personal Python cookiecutter template.
+{% raw %}{{cookiecutter.template_description}}{% endraw %}.
 
-[![Build Status](https://travis-ci.org/rrwen/cookiecutter-template.svg?branch=master)](https://travis-ci.org/rrwen/cookiecutter-template)
-[![GitHub license](https://img.shields.io/github/license/rrwen/cookiecutter-template.svg)](https://github.com/rrwen/cookiecutter-template/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/{% raw %}{{cookiecutter.github_short}}{% endraw %}.svg?branch=master)](https://travis-ci.org/{% raw %}{{cookiecutter.github_short}}{% endraw %})
+[![GitHub license](https://img.shields.io/github/license/{% raw %}{{cookiecutter.github_short}}{% endraw %}.svg)](https://github.com/{% raw %}{{cookiecutter.github_short}}{% endraw %}/blob/master/LICENSE)
 
 ## Install
 
 1. Install [Python](https://www.python.org/downloads/)
 2. Install [cookiecutter](https://pypi.python.org/pypi/cookiecutter) via `pip`
-3. Install [Node.js](https://nodejs.org/en/)
 
 ```
 pip install cookiecutter
@@ -20,10 +19,10 @@ pip install cookiecutter
 
 ## Usage
 
-Create a [cookiecutter](https://pypi.python.org/pypi/cookiecutter) template:
+Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter):
 
 ```
-cookiecutter gh:rrwen/cookiecutter-template
+cookiecutter gh:{% raw %}{{cookiecutter.github_short}}{% endraw %}
 ```
 
 ## Developer Notes
@@ -48,15 +47,15 @@ git push -u origin master
 
 This template to create folders and files for [cookiecutter](https://pypi.python.org/pypi/cookiecutter) templates.
 
-* The main file is [cookiecutter.json](https://github.com/rrwen/cookiecutter-template/blob/master/cookiecutter.json) which defines the inputs for the command line interface
-* The inputs then replace any values surrounded with `{{}}` inside the folder [{{cookiecutter.template_name}}](https://github.com/rrwen/cookiecutter-template/tree/master/%7B%7Bcookiecutter.template_name%7D%7D)
+* The main file is [cookiecutter.json](https://github.com/rrwen/cookiecutter-npm/blob/master/cookiecutter.json) which defines the inputs for the command line interface
+* The inputs then replace any values surrounded with `{{}}` inside the folder [{% raw %}{{cookiecutter.template_name}}{% endraw %}]({% raw %}{{cookiecutter.github_url}}{% endraw %}/tree/master/%7B%7B{% raw %}{{cookiecutter.template_name}}{% endraw %}%7D%7D)
 
 ```
         cookiecutter             <-- template tool
              |
       cookiecutter.json          <-- template inputs
              |
-{{cookiecutter.template_name}}    <-- generated template
+{% raw %}{{cookiecutter.template_name}}{% endraw %}    <-- generated template
 ```
 
 The following files will be created inside a folder with the same name as the `template_name` input:

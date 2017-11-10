@@ -1,0 +1,9 @@
+{
+  "author": "{% raw %}{{cookiecutter.author}}{% endraw %}",
+  "email": "{% raw %}{{cookiecutter.email}}{% endraw %}",
+  "template_name": "{% raw %}{{cookiecutter.template_name}}{% endraw %}",
+  "template_description": "{% raw %}{{cookiecutter.template_description}}{% endraw %}",
+   "github_user": "{% raw %}{{cookiecutter.github_user}}{% endraw %}",
+   "github_url": "{% raw %}{{'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.template_name}}{% endraw %}",
+   "github_short": "{% raw %}{{cookiecutter.github_user + '/' + cookiecutter.template_name}}{% endraw %}"
+}

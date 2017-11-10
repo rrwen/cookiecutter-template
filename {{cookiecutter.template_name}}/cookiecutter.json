@@ -1,0 +1,9 @@
+{
+  "author": "{{cookiecutter.author}}",
+  "email": "{{cookiecutter.email}}",
+  "template_name": "{{cookiecutter.template_name}}",
+  "template_description": "{{cookiecutter.template_description}}",
+   "github_user": "{{cookiecutter.github_user}}",
+   "github_url": "{{'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.template_name}}",
+   "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}"
+}
