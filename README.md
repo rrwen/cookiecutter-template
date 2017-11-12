@@ -26,6 +26,8 @@ Create a [cookiecutter](https://pypi.python.org/pypi/cookiecutter) template:
 cookiecutter gh:rrwen/cookiecutter-template
 ```
 
+See [Implementation](#implementation) for more details.
+
 ## Developer Notes
 
 ### Create Github Repository
@@ -64,8 +66,10 @@ This code creates folders and files for [cookiecutter](https://pypi.python.org/p
 
 The following files will be created inside a folder with the same name as the `template_name` input:
 
-* **{{cookiecutter.template_name}}**: templating folder with README.md and MIT LICENSE files
-* **.gitignore**: a Python [.gitignore](https://git-scm.com/docs/gitignore) automatically generated from github
-* **.travis.yml**: a [.travis.yml](https://docs.travis-ci.com/user/customizing-the-build/) file for automatic builds and tests
-* **LICENSE**: MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
-* **README.md**: a readme [Markdown](https://daringfireball.net/projects/markdown/) file with header, install, usage, and developer notes sections
+File | Description
+--- | ---
+**{{cookiecutter.template_name}}** | Templating folder with README.md and MIT LICENSE files
+**.gitignore** | A Python [.gitignore](https://git-scm.com/docs/gitignore) automatically generated from github
+**.travis.yml** | A [.travis.yml](https://docs.travis-ci.com/user/customizing-the-build/) file for automatic builds and tests
+**LICENSE** | MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
+**README.md** | A readme [Markdown](https://daringfireball.net/projects/markdown/) file with header, install, usage, and developer notes sections
