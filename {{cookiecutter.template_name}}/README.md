@@ -52,7 +52,7 @@ git push -u origin master
 
 This code creates folders and files for [cookiecutter](https://pypi.python.org/pypi/cookiecutter) templates.
 
-* The main file is [cookiecutter.json](https://github.com/rrwen/cookiecutter-npm/blob/master/cookiecutter.json) which defines the inputs for the command line interface
+* The main file is [cookiecutter.json](https://github.com/rrwen/{{cookiecutter.template_name}}/blob/master/cookiecutter.json) which defines the inputs for the command line interface
 * The inputs then replace any values surrounded with `{% raw %}{{}}{% endraw %}` inside the folder [{% raw %}{{cookiecutter.template_name}}{% endraw %}]({{cookiecutter.github_url}}/tree/master/%7B%7B{% raw %}{{cookiecutter.template_name}}{% endraw %}%7D%7D)
 
 ```
